@@ -1,0 +1,45 @@
+Understand Linked Lists
+Types of Linked Lists
+Singly Linked List:
+
+Structure: Each node contains data and a reference (link) to the next node in the list.
+Operations:
+Insertion: O(1) at the beginning; O(n) at the end or in the middle (requires traversal).
+Deletion: O(1) if the node is known (given a reference); O(n) if searching is required.
+Traversal: O(n) (requires visiting each node).
+Advantages: Simple structure, efficient insertion/deletion at the beginning.
+Doubly Linked List:
+
+Structure: Each node contains data and two references (links), one to the next node and one to the previous node.
+Operations:
+Insertion/Deletion: O(1) if the node is known (given a reference); O(n) if searching is required.
+Traversal: O(n) (can traverse in both directions).
+Advantages: More flexible than singly linked lists, allows bidirectional traversal.
+
+Analysis
+Time Complexity of Each Operation
+Add Task:
+
+Best Case: O(1) (if adding at the beginning)
+Average Case: O(n) (if adding at the end, requires traversal)
+Search Task by ID:
+
+Average Case: O(n) (requires traversal of the list)
+Traverse Tasks:
+
+Time Complexity: O(n) (requires visiting each node)
+Delete Task by ID:
+
+Average Case: O(n) (requires traversal to find the node, deletion is O(1) once the node is found)
+Advantages of Linked Lists Over Arrays
+Dynamic Size: Linked lists can grow and shrink in size dynamically without needing to allocate or resize memory.
+Efficient Insertions/Deletions: Insertions and deletions can be done in O(1) time if the node is known, while arrays require shifting elements (O(n) time).
+No Wasted Space: Linked lists do not require a fixed-size block of memory and do not waste space.
+When to Use Linked Lists:
+
+Frequent Insertions/Deletions: When operations involve frequent insertions and deletions, especially at positions other than the end.
+Dynamic Data: When the size of the dataset changes frequently.
+Limitations:
+
+Memory Overhead: Each node requires extra memory for the reference to the next node.
+Access Time: Accessing elements by index requires O(n) time, unlike arrays with O(1) access time.

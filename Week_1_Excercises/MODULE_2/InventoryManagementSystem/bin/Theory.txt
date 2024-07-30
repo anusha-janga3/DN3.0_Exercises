@@ -1,0 +1,34 @@
+Understanding the Problem
+Efficient data storage and retrieval are essential in handling large inventories because:
+
+Scalability: As the number of products grows, the system must be able to handle increased data volume without significant performance degradation.
+Performance: Quick access to inventory data is crucial for operations such as checking stock levels, updating quantities, and processing orders.
+Consistency: Ensuring data consistency and accuracy is vital for inventory management to avoid discrepancies.
+Resource Management: Efficient use of memory and processing power helps in reducing operational costs and improving system reliability.
+Types of Data Structures Suitable for Inventory Management
+
+ArrayList:
+Advantages: Simple to use, dynamic resizing, fast access by index.
+Disadvantages: Slow insertion and deletion in the middle, inefficient for searching unless sorted.
+
+HashMap:
+Advantages: Fast access, insertion, and deletion (average O(1) time complexity), keys allow for unique product identification.
+Disadvantages: Unordered, potential for hash collisions, uses more memory.
+
+TreeMap:
+Advantages: Ordered by keys, allows for range queries, balanced tree structure.
+Disadvantages: Slower access, insertion, and deletion compared to HashMap (O(log n) time complexity).
+
+
+Analysis
+Time Complexity
+
+Add Product:
+
+Time Complexity: O(1) on average due to the underlying hash table structure of HashMap.
+Update Product:
+
+Time Complexity: O(1) on average, as it involves a put operation which is typically O(1).
+Delete Product:
+
+Time Complexity: O(1) on average, as it involves a remove operation which is typically O(1)

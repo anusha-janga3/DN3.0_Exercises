@@ -1,0 +1,40 @@
+Understand Search Algorithms
+Linear Search
+Description: Linear search (or sequential search) involves checking each element in a list or array one by one until the desired element is found or the end of the list is reached.
+Time Complexity:
+Best Case: O(1) (when the desired element is at the first position)
+Average Case: O(n) (when the element is somewhere in the middle or not present)
+Worst Case: O(n) (when the element is at the last position or not present)
+Binary Search
+Description: Binary search is an efficient algorithm for finding an element in a sorted list by repeatedly dividing the search interval in half. It starts by comparing the target value with the middle element of the list. If the target value is less than the middle element, it searches the left half, otherwise, it searches the right half.
+Time Complexity:
+Best Case: O(1) (when the target value is at the middle of the list)
+Average Case: O(log n) (repeatedly dividing the search interval in half)
+Worst Case: O(log n) (when the search interval is reduced to a single element)
+
+Analysis
+Comparison of Time Complexity
+Linear Search:
+
+Best Case: O(1)
+Average Case: O(n)
+Worst Case: O(n)
+Pros: Simple to implement, works with unsorted data.
+Cons: Inefficient for large datasets due to linear time complexity.
+Binary Search:
+
+Best Case: O(1)
+Average Case: O(log n)
+Worst Case: O(log n)
+Pros: Efficient for large datasets if the data is sorted.
+Cons: Requires sorted data and additional steps for sorting if data is initially unsorted.
+When to Use Each Algorithm
+Linear Search:
+
+When: The dataset is small or unsorted, or if the cost of sorting is prohibitive.
+Pros: No need for sorting; simple and straightforward.
+Binary Search:
+
+When: The dataset is large and sorted or can be sorted efficiently.
+Pros: Much faster than linear search for large datasets due to logarithmic time complexity.
+Cons: Requires the data to be sorted; sorting adds overhead if data isn't pre-sorted.

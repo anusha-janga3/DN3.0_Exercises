@@ -1,0 +1,20 @@
+Analysis
+Performance Comparison
+Bubble Sort:
+
+Best Case: O(n) (when already sorted)
+Average Case: O(n^2)
+Worst Case: O(n^2)
+Pros: Simple to implement.
+Cons: Inefficient for large datasets due to its quadratic time complexity.
+Quick Sort:
+
+Best Case: O(n log n)
+Average Case: O(n log n)
+Worst Case: O(n^2) (can be avoided with good pivot selection)
+Pros: Efficient for large datasets with an average-case time complexity of O(n log n).
+Cons: Requires careful pivot selection to avoid worst-case performance.
+Why Quick Sort is Generally Preferred
+Efficiency: Quick Sort is generally preferred for its average-case time complexity of O(n log n), making it more efficient for large datasets compared to Bubble Sort.
+Performance: While both algorithms have quadratic worst-case scenarios, Quick Sort’s worst case is rare and can be mitigated with good pivoting strategies.
+Space: Quick Sort can be implemented with in-place partitioning, reducing memory usage compared to Merge Sort.

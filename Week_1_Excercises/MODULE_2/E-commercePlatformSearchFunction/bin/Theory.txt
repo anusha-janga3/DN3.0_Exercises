@@ -1,0 +1,41 @@
+1. Understand Asymptotic Notation
+Big O Notation
+Big O notation is used to describe the time complexity of algorithms. It provides a way to analyze how the running time of an algorithm grows as the size of the input increases. The notation focuses on the upper bound of the algorithm's running time, allowing us to understand its worst-case performance.
+
+Key Concepts:
+
+O(1): Constant time complexity. The execution time does not change with the size of the input.
+O(n): Linear time complexity. The execution time grows linearly with the size of the input.
+O(log n): Logarithmic time complexity. The execution time grows logarithmically with the size of the input, common in algorithms that divide the problem in each step.
+O(n^2): Quadratic time complexity. The execution time grows quadratically with the size of the input, typical in algorithms with nested loops.
+Search Operations
+Linear Search:
+
+Best Case: O(1). The desired element is the first one checked.
+Average Case: O(n). The desired element is found somewhere in the middle.
+Worst Case: O(n). The desired element is the last one checked or not present.
+Binary Search:
+
+Best Case: O(1). The desired element is exactly in the middle of the array.
+Average Case: O(log n). The search space is halved with each step.
+Worst Case: O(log n). The search space is reduced to a single element.
+
+Analysis
+Time Complexity Comparison
+Linear Search:
+
+Best Case: O(1)
+Average Case: O(n)
+Worst Case: O(n)
+Binary Search:
+
+Best Case: O(1)
+Average Case: O(log n)
+Worst Case: O(log n)
+Suitability for the Platform
+Linear Search is simpler but less efficient for large datasets, as its time complexity grows linearly with the number of elements.
+Binary Search is more efficient for large datasets with a time complexity of O(log n), but requires the data to be sorted.
+For an e-commerce platform:
+
+If the product catalog is static or changes infrequently, binary search is preferred due to its efficiency with large datasets. The data should be kept sorted to take advantage of binary search.
+If the catalog is dynamic and changes frequently, linear search might be simpler to implement without needing sorting, but for performance, consider maintaining a sorted data structure or using data structures that support efficient search operations like balanced binary search trees or hash maps.
