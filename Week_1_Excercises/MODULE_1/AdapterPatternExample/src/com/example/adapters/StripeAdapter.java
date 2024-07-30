@@ -1,0 +1,17 @@
+package com.example.adapters;
+
+import com.example.payment.PaymentProcessor;
+import com.example.gateways.Stripe;
+
+public class StripeAdapter implements PaymentProcessor {
+    private Stripe stripe;
+
+    public StripeAdapter(Stripe stripe) {
+        this.stripe = stripe;
+    }
+
+    @Override
+    public void processPayment(double amount) {
+        stripe.sendPayment(amount);
+    }
+}
